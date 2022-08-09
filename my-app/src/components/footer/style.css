@@ -1,0 +1,27 @@
+.G-img{
+    background-position: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.G-j-center{
+    justify-content: center;
+}
+.G-center{
+    justify-content: center;
+    align-items: center;
+}
+.P-Slaid{
+    text-align: center;
+    width: 750px;
+    height: 390px;
+}
+.P-Slaid h1,p{
+    transition: 0.3;
+     color: white;
+}
+.P-Slaid p{
+   margin: 0 auto;
+    width: 500px;
+    
+
+}

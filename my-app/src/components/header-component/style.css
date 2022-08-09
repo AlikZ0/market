@@ -1,0 +1,16 @@
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    background-color:white;
+  
+}
+.G-flex ul li {
+    cursor: pointer;
+    list-style-type: none;
+    margin: 15px;
+    padding: 15px;
+    font-size: 25px;
+}
+.G-flex ul li:hover{
+    color: #FFD333;
+}
