@@ -24,13 +24,13 @@ const FooterSection1 = () => {
             Text: '24/7 Support'
         },
     ])
-    return <div  style={{ background: '#F5F5F5' }}>
+    return <div  style={{ backgroundColor: '#F5F5F5' ,}}>
         {/* <div className="P-icon">
      <span className="icon-checkmark "><h1>Quality Product</h1></span>
     <i className="icon-checkmark G-center" style={{marginTop:25+'px',fontSize:40+'px',color:"#FFD333",marginRight:1+'px'}}></i>
     <h2 style={{color:'#3D464D'}}> Quality Product</h2>
     </div> */}
-        <div className="G-flex G-j-center" >
+        <div className=" App G-flex G-j-center"  >
             {info.map((item, index) => {
                 return <div className="P-icon " style={{ margin: 10 + 'px' }}>
                     <i className={item.icon} style={{ marginTop: 25 + 'px', fontSize: 40 + 'px', color: "#FFD333", marginRight: 1 + 'px' }}></i>
@@ -42,7 +42,7 @@ const FooterSection1 = () => {
         {/* <h2 className="L-after">
             <span>CATEGORIES</span>
         </h2> */}
-        <MiniSector/>
+        {/* <MiniSector/> */}
         </div>
     </div>
 }

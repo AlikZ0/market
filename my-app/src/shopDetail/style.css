@@ -1,0 +1,68 @@
+.S_button button{
+    width: 40px;
+    height: 40px;
+    font-size: 10px;
+    background-color: #FFD333;
+    border-color: #FFD333;
+
+}
+.S_button span{
+    text-align: center;
+    background-color: #F5F5F5 ;
+    width: 70px;
+    height: 40px;
+    font-size: 25px;
+}
+.Add-to-cart{
+    margin-left: 1px;
+    width: 100px;
+}
+.Add-to-cart img{
+    color: black;
+    width: 10px;
+    height: 10px;
+}
+.L-button button{
+    margin-top: 20px;
+    margin-left: 22px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px;
+    height: 37px;
+    color: #3D464D;
+    background-color:white;
+    border-color: #dee2e6;
+}
+.L-button h2{
+   
+    font-weight: 600;
+    line-height: 1.2;
+    color: #3D464D;
+
+}
+.L-button h5{
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6C757D;
+   padding: 15px 17px 0 20px;
+}
+.A_after{
+    position: relative;
+}
+.A_after::after{
+    position:absolute;
+    content: '';
+    margin-left:27%;
+    width: 72%;
+    height: 1px;
+    top:calc(50%);
+    background-color: black;
+}
+.features-info{
+    background-color: white;
+    text-align: center;
+    width:100%;
+    height:70px ;
+}

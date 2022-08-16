@@ -1,0 +1,110 @@
+
+.footer-cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 100% ;
+    max-width: 1250px;
+    /* height: 500px; */
+    background-color: #3D464D;
+}
+.footer-cont h2{
+    padding-top: 20px;
+    color: white;
+    font-weight: bolder;
+    line-height: 1.2;
+}
+.footer-cont p{
+    padding-top: 15px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    /* font-weight: 300; */
+    line-height: 1.5;
+}
+.footer-cont h5{
+    font-size: 17px;
+    padding-top: 20px;
+    color: white;
+}
+.footer-cont h3{
+    padding-top: 15px;
+    color: white;
+}
+.footer-cont h3:hover{
+    color: rgb(218, 218, 218);
+    cursor: pointer;
+    text-decoration: underline 1px solid yellow;
+}
+.footer-boxis
+{
+    padding-left: 10px;
+    padding-top: 30px;
+    margin: 5px;
+    width: 300px;
+    height: 400px;
+}
+.footer-box input{
+    margin-top: 20px;
+    padding-left: 5px;
+    width: 150px;
+    height: 38px;
+    border: none;
+}
+.footer-box button{
+    cursor: pointer;
+    border: none;
+    width: 80px;
+    height: 35px;
+    background-color: #FFD333;
+}
+.for-icons-box{
+    width: 100%;
+    height: 80px;
+    /* background-color: yellowgreen; */
+}
+.for-icons-box img{
+    border: 5px solid #FFD333;
+    margin-top: 15px;
+    margin-left: 5px;
+    background-color:#FFD333;
+    width: 40px;
+    height: 40px;
+}
+.for-icons-box img:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #ffc800;
+    border: 5px solid #ffc800;
+
+}
+.underline-footer-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+}
+.footer-info{
+    padding-left: 10px;
+    width: 440px;
+    height: 50px;
+    /* background-color: yellowgreen; */
+}
+.for-cards{
+    padding-top: 20px;
+    width: 300px;
+    height: 40px;
+    /* background-color: coral; */
+}
+.footer-info span{
+    color:#FFD333;
+}
+.footer-info span:hover{
+    cursor: pointer;
+    color: #ffc800;
+    text-decoration: underline;
+}

@@ -1,7 +1,8 @@
 .P-icon{
     display: flex;
+    align-items: center;
     justify-content: center;
-    width: 263px;
+    width: 25%;
     height: 100px;
     background-color: white;
 }
@@ -18,7 +19,7 @@
     display: inline-block;
     height: 0.5em;
     vertical-align: bottom;
-    width: 100%;
+    width: 87%;
     margin-right: -100%;
     margin-left: 10px;
     border-top: 1px solid black;
@@ -33,12 +34,62 @@
     margin-left: 10px;
     border-top: 1px solid black;
   } */
+.K-list{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
 .S-sector{
+    flex-wrap: wrap;
     width: 263px;
     height: 100px;
-    background-color: pink;
+    /* background-color: pink; */
 }
 .P-Img{
     width: 100px;
     height: 100px;
+}
+.skal{
+    width: 270px;
+    height: 110px;
+    background-color: #FFFFFF;
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.for-info{
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 170px;
+    height: 100px;
+    text-align: center;
+}
+.L-main{
+    justify-content: center;
+    background-color: #FFFFFF;
+    text-align: center;
+    width: 160px;
+    height: 100px;
+
+    
+}
+.L-main h4{
+    margin-top: 25px;
+}
+.L-main p
+{
+    margin-top: 10px;
+}
+.S-sector:hover{
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+    color: #fcc80e;
+    background-color:#fcc80e;
 }

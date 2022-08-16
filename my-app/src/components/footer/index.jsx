@@ -5,14 +5,8 @@ import sk from '../../img/carousel-2.jpg'
 import sks from '../../img/carousel-3.jpg'
 import offer1 from '../../img/offer-1.jpg'
 import offer2 from '../../img/offer-2.jpg'
-
-
-
-
-
-
-
 import './style.css'
+
 const FooterSlaid = () => {
     const [imgs, setimg] = useState({
         img: ss,
@@ -60,25 +54,26 @@ const FooterSlaid = () => {
         console.log(num, '2');
     }
 
-    return <div className="G-flex G-j-center" style={{ margin: 10 + 'px',marginTop:0+'px',marginBottom:0+'px', background: '#F5F5F5' }}>
-        <div className="G-img P-Slaid " style={{ backgroundImage: `url(${imgs.img})`,margin:20+'px', color: 'while' }}>
-            <h1>{imgs.h1}</h1>
-            <p>{imgs.p}</p>
-            <button onClick={foo}> clik  </button>
-        </div>
-
-        <div>
-            <div >
-                <img className="G-img" style={{width: 335+'px',height:200+'px',margin:10+'px' }} src={offer1} alt="" />
+    return <div style={{ background: '#F5F5F5', marginBottom: 0 + 'px' }}>
+        <div className="App G-flex " style={{ marginTop: 0 + 'px', marginBottom: 0 + 'px', background: '#F5F5F5' }}>
+            <div className="G-img P-Slaid  " style={{ backgroundImage: `url(${imgs.img})`, margin: 10 + 'px', color: 'while' }}>
+                <h1>{imgs.h1}</h1>
+                <p>{imgs.p}</p>
+                <button onClick={foo}> clik  </button>
             </div>
-            <div>
-                <img className="G-img" style={{width: 335+'px',height:200+'px',margin:0+'px' }}  src={offer2} alt="" />
+
+            <div style={{ width: 40 + '%' }}>
+                <div >
+                    <img className="G-img" style={{ width: 100 + '%', height: 200 + 'px', margin: 10 + 'px' }} src={offer1} alt="" />
+                </div>
+                <div>
+                    <img className="G-img" style={{ width: 100 + '%', height: 200 + 'px', margin: 10 + 'px' }} src={offer2} alt="" />
+                </div>
+                {/* <img src={imgs} alt="" /> */}
+
             </div>
-            {/* <img src={imgs} alt="" /> */}
 
         </div>
-
     </div>
-
 }
 export default FooterSlaid

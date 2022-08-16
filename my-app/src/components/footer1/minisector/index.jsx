@@ -50,44 +50,65 @@ const MiniSector =()=>{
             praduct:"100 Products"
         },
         {
+            img:A2,
+            names:"Category Name",
+            praduct:"100 Products"
+        },
+        {
+            img:A1,
+            names:"Category Name",
+            praduct:"100 Products"
+        },
+        {
+            img:A4,
+            names:"Category Name",
+            praduct:"100 Products"
+        },
+        {
             img:A3,
             names:"Category Name",
             praduct:"100 Products"
         }
         
     ])
-    return <div >
-    <div  >
-    <h2 className="L-after">
+    return <div style={{background:"",width:100+'%'}} >
+    <div  className="App">
+    <h2 className="  L-after ">
         <span>CATEGORIES</span>
     </h2>
     
     </div>
 
-    <div className="S-sector ">
-        <div className="G-flex">
+  {/*   <div className=" App S-sector G-flex">
+         <div className="G-flex">
             <img className="G-img P-Img" src={A1} alt="" />
             <div style={{marginLeft:10+'px'}}>
                 <h4>Category Name</h4>
                 <p>100 Products </p>
             </div>
-           
-        </div>
-
-       <div className="G-flex  "style={{background:'pink',margin:"0 auto"}}>
-       {info.map((item,index)=>{
-        return <div className="G-flex">
-            <img className="G-img P-Img" src={item.img} alt="" />
+            </div>
+            <div className="G-flex">
+            <img className="G-img P-Img" src={A1} alt="" />
             <div style={{marginLeft:10+'px'}}>
-                <h4>{item.names}</h4>
+                <h4>Category Name</h4>
                 <p>100 Products </p>
+            </div>
+        </div>  */}
+
+       <div className="K-list App  ">
+       {info.map((item,index)=>{
+        return <div className="G-flex S-sector skal " >
+            <img className="G-img P-Img" src={item.img} alt="" />
+            <div className="L-main" >
+                <h4>{item.names}</h4>
+                <p style={{color:'black'}}>100 Products </p>
             </div>
             </div>
        })}
        </div>
         
 
-    </div>
+    {/* </div>  */}
     </div>
 }
 export default MiniSector
