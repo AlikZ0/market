@@ -1,7 +1,7 @@
 .S_button button{
     width: 40px;
     height: 40px;
-    font-size: 10px;
+    font-size: 15px;
     background-color: #FFD333;
     border-color: #FFD333;
 
@@ -19,8 +19,8 @@
 }
 .Add-to-cart img{
     color: black;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
 }
 .L-button button{
     margin-top: 20px;

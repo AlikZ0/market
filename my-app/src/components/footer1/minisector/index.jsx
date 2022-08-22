@@ -97,7 +97,7 @@ const MiniSector =()=>{
 
        <div className="K-list App  ">
        {info.map((item,index)=>{
-        return <div className="G-flex S-sector skal " >
+        return <div className="G-flex S-sector skal " kay={index} >
             <img className="G-img P-Img" src={item.img} alt="" />
             <div className="L-main" >
                 <h4>{item.names}</h4>

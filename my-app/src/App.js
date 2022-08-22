@@ -15,6 +15,8 @@ import Home from './components/home';
 import Shop from './shop';
 import Contact from './contact';
 import ShopDetail from './shopDetail';
+import ShopingCart from './shopingCart';
+import Checkout from './checkout-main';
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
         <Route path={ROUTER_NAMES.SHOP} element={<Shop/>}></Route>
         <Route path={ROUTER_NAMES.CONTACT} element={<Contact/>}></Route>
         <Route path={ROUTER_NAMES.SHOP_DETAIL} element={<ShopDetail/>}></Route>
+        <Route path={ROUTER_NAMES.SHOPING_CART} element={<ShopingCart/>}></Route>
+        <Route path={ROUTER_NAMES.CHECKOUT} element={<Checkout/>}></Route>
       </Routes>
       {/* <FooterSlaid/>
       <FooterSection1/>

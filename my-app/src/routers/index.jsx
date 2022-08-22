@@ -5,5 +5,8 @@ export const ROUTER_NAMES = {
   SHOP: '/SHOP',
   CONTACT: '/contact',
   LOGIN_SETTINGS:'/login-settings',
-  SHOP_DETAIL:'shop-detail'
+  SHOP_DETAIL:'/shop-detail',
+  SHOPING_CART:'/shoping-cart',
+  CHECKOUT:'/Checkout'
+
 }

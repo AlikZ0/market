@@ -57,9 +57,9 @@ const FooterSlaid = () => {
     return <div style={{ background: '#F5F5F5', marginBottom: 0 + 'px' }}>
         <div className="App G-flex " style={{ marginTop: 0 + 'px', marginBottom: 0 + 'px', background: '#F5F5F5' }}>
             <div className="G-img P-Slaid  " style={{ backgroundImage: `url(${imgs.img})`, margin: 10 + 'px', color: 'while' }}>
-                <h1>{imgs.h1}</h1>
+                <h1 style={{marginTop:'80px'}}>{imgs.h1}</h1>
                 <p>{imgs.p}</p>
-                <button onClick={foo}> clik  </button>
+                <button className="G-button L-button" onClick={foo}> Clik  </button>
             </div>
 
             <div style={{ width: 40 + '%' }}>

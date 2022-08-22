@@ -111,7 +111,7 @@ const ShopDetail = () => {
       </div>
       <div className=" App G-flex ">
         {products.map((item, index) => (
-          <div style={{ width: "25%",margin:'22px' }}>
+          <div style={{ width: "25%",margin:'22px' }} kay={index}>
             <img className="G-img" src={item.image} alt="" style={{ width: '100%' }} />
             <div className="for-opacity">
               <img src={search} alt="#" />

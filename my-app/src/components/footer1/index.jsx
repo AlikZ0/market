@@ -32,7 +32,7 @@ const FooterSection1 = () => {
     </div> */}
         <div className=" App G-flex G-j-center"  >
             {info.map((item, index) => {
-                return <div className="P-icon " style={{ margin: 10 + 'px' }}>
+                return <div className="P-icon " style={{ margin: 10 + 'px' }} kay={index}>
                     <i className={item.icon} style={{ marginTop: 25 + 'px', fontSize: 40 + 'px', color: "#FFD333", marginRight: 1 + 'px' }}></i>
                     <h2 style={{ color: '#3D464D' }}> {item.Text}</h2>
                 </div>

@@ -86,7 +86,7 @@ const Sort = () => {
               </div>
               <div className="features-blocks">
                     {products.map((item, index) => (
-                         <div className="boxes-features">
+                         <div className="boxes-features" kay={index}>
                             
                               <img className="features-img" style={{ width: '270px', height: "240px", }} src={item.image} alt="#" />
                                <div className="for-opacity">

@@ -15,9 +15,9 @@ const Contact = () => {
         set({...get, [e.target.name]: e.target.value})
         // console.log(e);
       }
-      useEffect(()=>{
-        console.log(get);
-      },[get.Name])
+    //   useEffect(()=>{
+    //     console.log(get);
+    //   },[get.Name])
 
     return <div>
         <div className="App G-flex" style={{ background: 'white', fontSize: "30px", color: ' gray' }}>

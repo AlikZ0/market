@@ -14,7 +14,7 @@ const HeaderComponent = () => {
   // const s =+prompt()
   //**
   //**//
-  const[a ,b]=useState(0)
+  const[a ,b]=useState(1)
 
   const [get,set]=useState({
     love:0,
@@ -53,7 +53,7 @@ const HeaderComponent = () => {
     </ul>
     <ul className="bar-cont">
       <li className="for-love">
-        <img src={love} alt="" />
+      <NavLink to={ROUTER_NAMES.SHOPING_CART} style={{ color: 'currentcolor' }}>  <img src={love} alt="" /></NavLink>
         <span>{get.love}</span>
       </li>
       <li className="for-shop">
