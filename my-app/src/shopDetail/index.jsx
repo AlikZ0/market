@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import './style.css'
-import { NavLink } from "react-router-dom";
+import {useDispatch, useSelector} from "react-redux";
+
+import { NavLink,useNavigate } from "react-router-dom";
 import { ROUTER_NAMES } from "../routers";
 import camera from "../img/product-1.jpg";
 import blueshirt from "../img/product-2.jpg";
@@ -14,7 +16,12 @@ import storee from "../img/storee.png"
 import changee from "../img/changee.png"
 
 const ShopDetail = () => {
-
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+ const bay =()=>{
+navigate(ROUTER_NAMES.SHOPING_CART)
+  dispatch({type: "SET_STORE",payload: get})
+ }
 
 
 
@@ -88,7 +95,7 @@ const ShopDetail = () => {
             <button onClick={() => foo(false)} >-</button>
             <span>{get}</span>
             <button onClick={() => foo(true)}>+</button>
-            <button className="Add-to-cart" style={{ marginLeft: '3%', width: '60%' }} ><img src={storee} alt="" /> Add To Cart</button>
+            <button className="Add-to-cart" style={{ marginLeft: '3%', width: '60%' }} onClick={bay} ><img src={storee} alt="" /> Add To Cart</button>
 
           </div>
 
@@ -111,7 +118,7 @@ const ShopDetail = () => {
       </div>
       <div className=" App G-flex ">
         {products.map((item, index) => (
-          <div style={{ width: "25%",margin:'22px' }} kay={index}>
+          <div style={{ width: "25%",margin:'22px' }} key={index}>
             <img className="G-img" src={item.image} alt="" style={{ width: '100%' }} />
             <div className="for-opacity">
               <img src={search} alt="#" />

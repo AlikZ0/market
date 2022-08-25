@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import { NavLink ,useNavigate} from "react-router-dom";
+import {useDispatch, useSelector} from "react-redux";
+
 import { ROUTER_NAMES } from "../routers";
 import nikon from "../img/product-1.jpg"
 import "./style.css"
@@ -8,7 +10,8 @@ import "./style.css"
 
 
 const Checkout = () => {
-
+  const contect=useSelector( (state)=>state.shopingcart.contect )
+   
     const[get,set]=useState({
       firstname:'',
       lasttname:"",
@@ -163,18 +166,18 @@ const Checkout = () => {
             
             <div className='product-name'>
               <h3>Subtotal</h3>
-              <h3>$150</h3>
+              <h3>${contect}</h3>
             </div>
             <div className='product-name'>
               <h3>Shipping</h3>
-              <h3>$10</h3>
+              <h3>{  contect<10000? '$150' :"$75"}</h3>
             </div>
             <div className='AFTER'>
               <div></div>
             </div>
             <div className='product-name'>
               <h2>Total</h2>
-              <h2>$160</h2>
+              <h2>${contect*0.9 + +`${ contect<10000? 150 :75}`}</h2>
             </div>
           </div>
         </div>

@@ -97,8 +97,8 @@ const MiniSector =()=>{
 
        <div className="K-list App  ">
        {info.map((item,index)=>{
-        return <div className="G-flex S-sector skal " kay={index} >
-            <img className="G-img P-Img" src={item.img} alt="" />
+        return <div className="G-flex S-sector skal " key={index} >
+            <img className="G-img P-Img" src={item.img} alt="3" />
             <div className="L-main" >
                 <h4>{item.names}</h4>
                 <p style={{color:'black'}}>100 Products </p>
@@ -108,7 +108,7 @@ const MiniSector =()=>{
        </div>
         
 
-    {/* </div>  */}
+    
     </div>
 }
 export default MiniSector

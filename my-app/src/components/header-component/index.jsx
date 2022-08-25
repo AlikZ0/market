@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import {NavLink} from "react-router-dom";
 import {ROUTER_NAMES} from "../../routers";
+import {useDispatch, useSelector} from "react-redux";
+
 import "./style.css"
 import love from "../../img/love.png"
 import store from "../../img/store.png"
@@ -11,22 +13,29 @@ import { useEffect } from "react";
 
 
 const HeaderComponent = () => {
+  const contect=useSelector( (state)=>state.contactreducer.store )
+  const loves=useSelector( (state)=>state.contactreducer.love )
+ useEffect(()=>{
+//console.log(contect,"undefined")
+ },[contect])
+  //console.log(contect,"dfff");
   // const s =+prompt()
   //**
   //**//
-  const[a ,b]=useState(1)
+  const[a ,b]=useState(0)
 
   const [get,set]=useState({
+    
     love:0,
-    store:0
+    store: 0
   })
-  useEffect(()=>{
-    let x = localStorage.getItem('counter')
-    console.log(a);
+  // useEffect(()=>{
+  //   let x = localStorage.getItem('counter')
+  //   // console.log(a);
     
-      b(x)
+  //     b(x)
     
-  },[])
+  // },[])
   
 
   return <header className="  G-flex flex-between" style={{backgroundColor:'#3D464D ',margin:0,padding:0}}>
@@ -54,12 +63,12 @@ const HeaderComponent = () => {
     <ul className="bar-cont">
       <li className="for-love">
       <NavLink to={ROUTER_NAMES.SHOPING_CART} style={{ color: 'currentcolor' }}>  <img src={love} alt="" /></NavLink>
-        <span>{get.love}</span>
+        <span>{loves}</span>
       </li>
       <li className="for-shop">
       <NavLink to={ROUTER_NAMES.SHOP_DETAIL} style={{ color: 'currentcolor' }}> <img  src={store} alt="" ></img> </NavLink> 
         {/* <img  src={store} alt="" ></img> */}
-        <span >{a}</span>
+        <span >{contect>100? "99+":contect}</span>
 
       </li>
     </ul>

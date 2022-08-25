@@ -6,13 +6,12 @@ const initialState = {
         Subject: 'testic',
         Message: 'Lorem ipsum dolor sit amet.'
     },
-    store:0,
-    love:0
+    contect:0
 }
 
 
 const ContactReducer = (state = initialState, action) => {
-    // console.log(action, 'AuthReducer')
+   // console.log(action, 'AuthReducer')
 
     switch (action.type) {
         case 'SET_CONTACT_MESSIJ': {
@@ -21,11 +20,8 @@ console.log(state,'state');
            
  
         }
-        case 'SET_STORE':{
-            return {...state,store: state.store+ action.payload}
-        }
-        case 'SET_LOVE':{
-            return {...state,love:action.payload}
+        case 'Shoping_Cart':{
+            return {...state,contect:action.payload}
         }
         default:
             return state

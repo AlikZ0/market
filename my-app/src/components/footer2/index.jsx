@@ -85,7 +85,7 @@ const MiniPraduct = () => {
         </div>
         <div className=" App features-blocks">
             {products.map((item, index) => (
-                <div className="boxes-features" kay={index}>
+                <div className="boxes-features" key={index}>
 
                     <img className="features-img" style={{ width: '270px', height: "240px", }} src={item.image} alt="#" />
                     <div className="for-opacity">

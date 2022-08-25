@@ -1,5 +1,7 @@
 import React from "react";
 import { useEffect, useState } from 'react';
+import {useDispatch, useSelector} from "react-redux";
+
 import { NavLink, useNavigate } from "react-router-dom";
 import { ROUTER_NAMES } from "../routers";
 import nikon from "../img/product-1.jpg"
@@ -7,14 +9,18 @@ import './style.css'
 
 
 const ShopingCart = () => {
+    const dispatch = useDispatch()
+    
     const navigate = useNavigate()
     const GoTo = () => {
         //    let x=navigator()
         //    x.ROUTER_NAMES.
+        dispatch({type: "Shoping_Cart",payload: newPost1})
+   
         navigate(ROUTER_NAMES.CHECKOUT)
 
     }
-
+  
 
 
     const [items, setItems] = useState([
@@ -114,20 +120,25 @@ const ShopingCart = () => {
 
     //     return x * 0.9
     // }
-    // let Newpost = items.map((item) => {
+    let Newpost = items.map((item) => {
 
-    //     return item.counter * item.p
-    // })
-    //console.log(Newpost);
+        return item.counter * item.p
+    })
+    console.log(Newpost.length);
     let newPost1 = items.reduce((sum,item)=>(sum += (item.p * item.counter)),0)
     //console.log(newPost1,"-------------------------");
+   
 
     useEffect(() => {
 
+        let x=Newpost.length
+        console.log(x);
+        set(x)
+        dispatch({type: "SET_LOVE",payload: get})
 
         //console.log(newPost1);
 
-    }, [items])
+    }, [])
     const forsis = (is, indexs) => {
       
 
@@ -143,12 +154,11 @@ const ShopingCart = () => {
     }
     const zoom = () => {
         // debugger
-        let x = items
-        x.id = 365
-        setItems(x)
+   
        // console.log(items);
     }
-    const [get, set] = useState(1)
+
+    const [get, set] = useState(0)
 
     const foo = () => {
         set(get + 1)
@@ -220,7 +230,7 @@ const ShopingCart = () => {
 
 
                 {items.map((item, index) => {
-                    return <div className='camera-box' kay={index}>
+                    return <div className='camera-box' key={index}>
                         <div className='name-product'>
                             <img src={item.img} alt="#" />
                             <h4>{item.h4}</h4>
@@ -262,7 +272,7 @@ const ShopingCart = () => {
 
                             <div className='Subtotal-box'>
                                 <h4>Subtotal</h4>
-                               <p >${newPost1+'   /    '}   -10% {/* ${newPost1*0.9}*/}</p> 
+                               <p >+${newPost1+'   /    '}   -10% {/* ${newPost1*0.9}*/}</p> 
                             </div>
                             <div className='Subtotal-box'>
                                 <h4>Shipping</h4>
