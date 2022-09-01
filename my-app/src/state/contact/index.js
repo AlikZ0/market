@@ -16,7 +16,7 @@ const ContactReducer = (state = initialState, action) => {
 
     switch (action.type) {
         case 'SET_CONTACT_MESSIJ': {
-console.log(state,'state');
+//console.log(state,'state');
             return {...state, contact: action.payload }
            
  
@@ -25,7 +25,7 @@ console.log(state,'state');
             return {...state,store: state.store+ action.payload}
         }
         case 'SET_LOVE':{
-            return {...state,love:action.payload}
+            return {...state,love: state.love+action.payload}
         }
         default:
             return state

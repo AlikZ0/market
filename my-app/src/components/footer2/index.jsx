@@ -13,15 +13,29 @@ import shampoos from "../../img/product-8.jpg";
 // import heart from "../../img/heart.png"
 // import storee from "../../img/storee.png"
 // import changee from "../../img/changee.png"
+import {useDispatch, useSelector} from "react-redux";
 import search from "../../img/search.png"
 import heart from "../../img/heart.png"
 import storee from "../../img/storee.png"
 import changee from "../../img/changee.png"
 
 const MiniPraduct = () => {
+    const dispatch = useDispatch()
     const [get, set] = useState([nikon, blueshirt, lamp, nikeshoes, dron, applewatch, shirts, shampoos, shampoos])
     const [img, setimg] = useState()
     const [num, setnum] = useState(0)
+    const [love, setLove] = useState(0)
+    const [store, setStore] = useState(0)
+
+    const gotoStore=()=>{
+        setStore(store+1)
+        
+        dispatch({type: "Shoping_Cart",payload: store})
+    }
+    const goToGack =()=>{
+          setLove(love+1)
+        dispatch({type: "SET_LOVE",payload: love})
+    }
     const foox = () => {
         setimg(get[num])
         setnum(num + 1)
@@ -90,8 +104,8 @@ const MiniPraduct = () => {
                     <img className="features-img" style={{ width: '270px', height: "240px", }} src={item.image} alt="#" />
                     <div className="for-opacity">
                         <img src={search} alt="#" />
-                                   <img src={heart} alt="#" />
-                                   <img src={storee} alt="#" />
+                                   <img src={heart} alt="#" onClick={goToGack}/>
+                                   <img src={storee} alt="#" onClick={gotoStore} />
                                    <img src={changee} alt="#" />
                     </div>
                     <div className="hover"></div>

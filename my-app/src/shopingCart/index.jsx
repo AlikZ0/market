@@ -124,21 +124,20 @@ const ShopingCart = () => {
 
         return item.counter * item.p
     })
-    console.log(Newpost.length);
+   // console.log(Newpost.length);
     let newPost1 = items.reduce((sum,item)=>(sum += (item.p * item.counter)),0)
     //console.log(newPost1,"-------------------------");
-   
-
+    
+        // console.log(x);
+       const lebel=items.length
+       
     useEffect(() => {
-
-        let x=Newpost.length
-        console.log(x);
-        set(x)
+        
+        set(lebel)
         dispatch({type: "SET_LOVE",payload: get})
 
-        //console.log(newPost1);
+    }, [items])
 
-    }, [])
     const forsis = (is, indexs) => {
       
 

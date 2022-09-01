@@ -32,13 +32,6 @@ function App() {
         <Route path={ROUTER_NAMES.SHOPING_CART} element={<ShopingCart/>}></Route>
         <Route path={ROUTER_NAMES.CHECKOUT} element={<Checkout/>}></Route>
       </Routes>
-      {/* <FooterSlaid/>
-      <FooterSection1/>
-       <MiniSector/>
-       <MiniPraduct/>
-        <SectorImg/>
-        <MiniPraduct/>
-      <Home /> */}
       <Footer />
     </div>
   );

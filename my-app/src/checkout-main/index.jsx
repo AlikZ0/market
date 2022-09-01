@@ -26,7 +26,7 @@ const Checkout = () => {
 
     const onchencke = (e) => {
       set({...get, [e.target.name]: e.target.value})
-      console.log(get);
+     // console.log(get);
     }
 
   return (<div>

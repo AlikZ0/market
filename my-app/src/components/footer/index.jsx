@@ -24,7 +24,7 @@ const FooterSlaid = () => {
 
     const foo = () => {
 
-        console.log(num);
+        //console.log(num);
         if (num == 0) {
             let z = {
                 img: sk,
@@ -51,7 +51,7 @@ const FooterSlaid = () => {
             setimg(x)
 
         }
-        console.log(num, '2');
+       // console.log(num, '2');
     }
 
     return <div style={{ background: '#F5F5F5', marginBottom: 0 + 'px' }}>
